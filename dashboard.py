@@ -62,8 +62,8 @@ tab1, tab2 = st.tabs(['Jam Sibuk', 'Pertumbuhan Tahunan'])
 
 # ======================= PERTANYAAN 1 =======================
 with tab1:
-    st.subheader('Perbandingan penyewaan jam sibuk vs jam lainnya pada hari kerja')
-    st.caption('Jam sibuk: 07.00-09.00 dan 16.00-19.00. Dasar penjadwalan penambahan dan redistribusi sepeda.')
+st.subheader('Perbandingan penyewaan jam sibuk vs jam lainnya pada hari kerja')
+st.caption('Jam sibuk: 07.00-09.00 dan 16.00-19.00. Dasar penjadwalan penambahan dan redistribusi sepeda.')
 
     hf = hour_df[hour_df['yr'].isin(tahun_pilih)]
     kerja = hf[hf['workingday'] == 'Hari Kerja'].copy()
@@ -119,7 +119,7 @@ with tab1:
 
 # ======================= PERTANYAAN 2 =======================
 with tab2:
-     st.subheader('Perbandingan penyewaan jam sibuk vs jam lainnya pada hari kerja')
+    st.subheader('Perbandingan penyewaan jam sibuk vs jam lainnya pada hari kerja')
     st.caption('Jam sibuk: 07.00-09.00 dan 16.00-19.00. Dasar penjadwalan penambahan dan redistribusi sepeda.')
 
     jenis = st.radio('Jenis pengguna', ['Semua', 'Casual', 'Registered'], horizontal=True)
