@@ -119,8 +119,8 @@ with tab1:
 
 # ======================= PERTANYAAN 2 =======================
 with tab2:
-    st.subheader('Pertumbuhan total penyewaan 2012 dibandingkan 2011')
-    st.caption('Dasar memperkirakan kebutuhan armada tahun 2013.')
+     st.subheader('Perbandingan penyewaan jam sibuk vs jam lainnya pada hari kerja')
+    st.caption('Jam sibuk: 07.00-09.00 dan 16.00-19.00. Dasar penjadwalan penambahan dan redistribusi sepeda.')
 
     jenis = st.radio('Jenis pengguna', ['Semua', 'Casual', 'Registered'], horizontal=True)
     kolom = {'Semua': 'cnt', 'Casual': 'casual', 'Registered': 'registered'}[jenis]
